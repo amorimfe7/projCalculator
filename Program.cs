@@ -62,8 +62,8 @@
             string option = Console.ReadLine();
             Fechar(option);
 
-            Console.ReadKey(); //permaneça na app
-            Menu(); //mantendo menu aberto
+            Console.ReadKey();
+            Menu();
         }
 
         static void Subtracao(){
