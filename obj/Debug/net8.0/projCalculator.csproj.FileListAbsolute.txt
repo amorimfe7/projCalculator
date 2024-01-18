@@ -1,0 +1,15 @@
+C:\Projetos\projCalculator\bin\Debug\net8.0\projCalculator.exe
+C:\Projetos\projCalculator\bin\Debug\net8.0\projCalculator.deps.json
+C:\Projetos\projCalculator\bin\Debug\net8.0\projCalculator.runtimeconfig.json
+C:\Projetos\projCalculator\bin\Debug\net8.0\projCalculator.dll
+C:\Projetos\projCalculator\bin\Debug\net8.0\projCalculator.pdb
+C:\Projetos\projCalculator\obj\Debug\net8.0\projCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\projCalculator\obj\Debug\net8.0\projCalculator.AssemblyInfoInputs.cache
+C:\Projetos\projCalculator\obj\Debug\net8.0\projCalculator.AssemblyInfo.cs
+C:\Projetos\projCalculator\obj\Debug\net8.0\projCalculator.csproj.CoreCompileInputs.cache
+C:\Projetos\projCalculator\obj\Debug\net8.0\projCalculator.sourcelink.json
+C:\Projetos\projCalculator\obj\Debug\net8.0\projCalculator.dll
+C:\Projetos\projCalculator\obj\Debug\net8.0\refint\projCalculator.dll
+C:\Projetos\projCalculator\obj\Debug\net8.0\projCalculator.pdb
+C:\Projetos\projCalculator\obj\Debug\net8.0\projCalculator.genruntimeconfig.cache
+C:\Projetos\projCalculator\obj\Debug\net8.0\ref\projCalculator.dll
