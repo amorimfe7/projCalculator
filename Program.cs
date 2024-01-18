@@ -2,7 +2,26 @@
 
     class Program{
         static void Main(string[] args){
-            Multiplicacao();
+            Menu();
+        }
+
+        static void Menu(){
+            Console.Clear();
+
+
+
+            Console.WriteLine("Qual operação deseja realizar?");
+            Console.WriteLine("");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("1 - Soma");
+            Console.WriteLine("2 - Subtração");
+            Console.WriteLine("3 - Divisão");
+            Console.WriteLine("4 - Multiplicação");
+
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Selecione uma opção: ");
+
+            short selection = short.Parse(Console.ReadLine());
         }
 
         static void Soma(){
