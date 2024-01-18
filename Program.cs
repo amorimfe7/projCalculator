@@ -8,13 +8,15 @@
         static void Menu(){
             Console.Clear();
 
-            Console.WriteLine("Qual operação deseja realizar?");
+            Console.WriteLine("=========== BEM VINDO A CALCULADORA ===========");
             Console.WriteLine("");
+            Console.WriteLine("Qual operação deseja realizar?");
             Console.WriteLine("------------------------");
             Console.WriteLine("1 - Soma");
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Divisão");
             Console.WriteLine("4 - Multiplicação");
+            Console.WriteLine("0 - Sair");
 
             Console.WriteLine("------------------------");
             Console.WriteLine("Selecione uma opção: ");
@@ -24,10 +26,20 @@
             switch (selection){
                 case 1: Soma(); break;
                 case 2: Subtracao(); break;
-                case 3: Multiplicacao(); break;
-                case 4: Divisao(); break;
+                case 3: Divisao(); break;
+                case 4: Multiplicacao(); break;
+                case 0: System.Environment.Exit(0); break;
+                        
+                default:Console.WriteLine("");
+                        Console.WriteLine("------------------------");
+                        Console.WriteLine("Opção inválida!");
+                        Console.WriteLine("");
+                        Console.WriteLine("Deseja sair da aplicação?");
+                        Console.WriteLine("");
+                        Console.WriteLine("[1] - Sim || [2] - Retornar para Menu"); 
+                        string option = Console.ReadLine();
 
-                default:Menu(); break;
+                        Fechar(option); break;
             }
         }
 
@@ -46,7 +58,10 @@
             Console.WriteLine($"O resultado da soma é {resultSum}");
 
             Console.WriteLine("");
-            Console.WriteLine("Pressione [Enter] para retornar ao Menu");
+            Console.WriteLine("Pressione [Enter] para retornar ao Menu ou [0] - Sair");
+            string option = Console.ReadLine();
+            Fechar(option);
+
             Console.ReadKey(); //permaneça na app
             Menu(); //mantendo menu aberto
         }
@@ -66,7 +81,10 @@
             Console.WriteLine($"O resultado da subtração é {resultSubtraction}");
 
             Console.WriteLine("");
-            Console.WriteLine("Pressione [Enter] para retornar ao Menu");
+            Console.WriteLine("Pressione [Enter] para retornar ao Menu ou [0] - Sair");
+            string option = Console.ReadLine();
+            Fechar(option);
+
             Console.ReadKey();
             Menu();
         }
@@ -86,7 +104,10 @@
             Console.WriteLine($"O resultado da Divisão é {resultDivision}");
 
             Console.WriteLine("");
-            Console.WriteLine("Pressione [Enter] para retornar ao Menu");
+            Console.WriteLine("Pressione [Enter] para retornar ao Menu ou [0] - Sair");
+            string option = Console.ReadLine();
+            Fechar(option);
+
             Console.ReadKey();
             Menu();
         }
@@ -106,9 +127,20 @@
             Console.WriteLine($"O resultado da Multiplicação é {resultMultiplication}");
 
             Console.WriteLine("");
-            Console.WriteLine("Pressione [Enter] para retornar ao Menu");
+            Console.WriteLine("Pressione [Enter] para retornar ao Menu ou [0] - Sair");
+            string option = Console.ReadLine();
+            Fechar(option);
+
             Console.ReadKey();
             Menu();
+        }
+
+        static void Fechar(string option){
+            if (option == "0" || option == "1"){
+                System.Environment.Exit(0);
+            } else{
+                Menu();
+            }
         }
     }
 }
