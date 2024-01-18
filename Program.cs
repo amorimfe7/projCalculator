@@ -2,7 +2,7 @@
 
     class Program{
         static void Main(string[] args){
-            Divisao();
+            Multiplicacao();
         }
 
         static void Soma(){
@@ -52,6 +52,23 @@
 
             double resultDivision = (v1/v2);
             Console.WriteLine($"O resultado da Divisão é {resultDivision}");
+
+            Console.ReadKey();
+        }
+
+        static void Multiplicacao(){
+            Console.Clear();
+
+            Console.WriteLine("Digite o primeiro valor: ");
+            double v1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o segundo valor: ");
+            double v2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            double resultMultiplication = (v1*v2);
+            Console.WriteLine($"O resultado da Multiplicação é {resultMultiplication}");
 
             Console.ReadKey();
         }
