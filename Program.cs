@@ -8,8 +8,6 @@
         static void Menu(){
             Console.Clear();
 
-
-
             Console.WriteLine("Qual operação deseja realizar?");
             Console.WriteLine("");
             Console.WriteLine("------------------------");
@@ -22,6 +20,15 @@
             Console.WriteLine("Selecione uma opção: ");
 
             short selection = short.Parse(Console.ReadLine());
+
+            switch (selection){
+                case 1: Soma(); break;
+                case 2: Subtracao(); break;
+                case 3: Multiplicacao(); break;
+                case 4: Divisao(); break;
+
+                default:Menu(); break;
+            }
         }
 
         static void Soma(){
@@ -38,7 +45,10 @@
             double resultSum = (v1 + v2);
             Console.WriteLine($"O resultado da soma é {resultSum}");
 
+            Console.WriteLine("");
+            Console.WriteLine("Pressione [Enter] para retornar ao Menu");
             Console.ReadKey(); //permaneça na app
+            Menu(); //mantendo menu aberto
         }
 
         static void Subtracao(){
@@ -55,7 +65,10 @@
             double resultSubtraction = (v1 - v2);
             Console.WriteLine($"O resultado da subtração é {resultSubtraction}");
 
+            Console.WriteLine("");
+            Console.WriteLine("Pressione [Enter] para retornar ao Menu");
             Console.ReadKey();
+            Menu();
         }
 
         static void Divisao(){
@@ -72,7 +85,10 @@
             double resultDivision = (v1/v2);
             Console.WriteLine($"O resultado da Divisão é {resultDivision}");
 
+            Console.WriteLine("");
+            Console.WriteLine("Pressione [Enter] para retornar ao Menu");
             Console.ReadKey();
+            Menu();
         }
 
         static void Multiplicacao(){
@@ -89,7 +105,10 @@
             double resultMultiplication = (v1*v2);
             Console.WriteLine($"O resultado da Multiplicação é {resultMultiplication}");
 
+            Console.WriteLine("");
+            Console.WriteLine("Pressione [Enter] para retornar ao Menu");
             Console.ReadKey();
+            Menu();
         }
     }
 }
