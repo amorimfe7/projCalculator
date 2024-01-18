@@ -28,7 +28,8 @@
                 case 2: Subtracao(); break;
                 case 3: Divisao(); break;
                 case 4: Multiplicacao(); break;
-                case 0: System.Environment.Exit(0); break;
+                case 0: System.Environment.Exit(0); 
+                break;
                         
                 default:Console.WriteLine("");
                         Console.WriteLine("------------------------");
