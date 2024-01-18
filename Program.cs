@@ -2,6 +2,10 @@
 
     class Program{
         static void Main(string[] args){
+            Soma();
+        }
+
+        static void Soma(){
             Console.Clear();
 
             Console.WriteLine("Digite o primeiro valor: ");
